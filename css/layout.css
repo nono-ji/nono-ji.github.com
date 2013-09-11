@@ -1,0 +1,175 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*
+* Layout.css -> For the web layout skeleton based
+* Copyright 2013, Dwi Novanto Ji
+* http://novantoji.com
+* Reuse of this stylesheet is strictly prohibited
+* 
+*/
+
+/* Table of Content
+==================================================
+	#Header Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Header Styles
+================================================== */
+header {
+	background-color:#d8d8d8;
+	height:100px;
+}
+
+#name {
+	font-family: "Avant-Garde";
+	font-size:52px;
+	padding-top:4.5%;
+}
+
+#menu {
+	float:right;
+	padding-top:6%;
+	font-family: "Droid-Sans";
+	font-size: 28px;
+}
+
+#menu a {
+	margin-left:25px;
+	padding-bottom:10px;
+}
+
+/* #Page Styles
+================================================== */
+body {
+	background-color: #efefef;
+}
+
+a {
+	color:#f86b76;
+	text-decoration: none;
+}
+
+a:visited{
+
+}
+
+a:hover{
+	color:#f62131;
+}
+
+#content{
+	padding-top:5%;
+}
+
+.container .one-third.column {
+	text-align: center;
+	margin-bottom: 13px;
+}
+
+.active-marker a{
+	border-bottom:solid 2px;
+}
+
+#about h3, #works h3 {
+	border-top:1px solid #a9a9a9;
+	border-bottom:1px solid #a9a9a9;
+	padding-top:1px;
+	padding-bottom:2px;
+	font-size: 25px;
+}
+
+#about, #works {
+	text-align: center;
+}
+
+#cheers{
+	font-size: 20px;
+}
+
+#me {
+	text-align: left;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		#name {
+			font-size:60px;
+		}
+
+		#menu {
+			font-size:26px;
+		}
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		header{
+			height:120px;
+		}
+		#name {
+			font-size:50px;
+		}
+
+		#menu {
+			font-size:22px;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#name {
+			font-size:46px;
+		}
+
+		#menu {
+			font-size:18px;
+		}
+		#menu a {
+			margin-left:10px;
+			padding-bottom:10px;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+@font-face {
+	    font-family: 'Avant-Garde';
+	    src: url('../fonts/ITC_Avant_Garde_Gothic_LT_Extra_Light.ttf');
+	    font-weight: normal;
+	    font-style: normal; 
+	}
+
+@font-face {
+	    font-family: 'Omnes';
+	    src: url('../fonts/Omnes-Thin.otf');
+	    font-weight: normal;
+	    font-style: normal; 
+	}
+
+@font-face {
+	    font-family: 'Droid-Sans';
+	    src: url('../fonts/DroidSans.ttf');
+	    font-weight: normal;
+	    font-style: normal; 
+	}
