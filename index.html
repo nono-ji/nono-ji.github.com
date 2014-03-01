@@ -15,13 +15,15 @@
 	    	'animspeed' : 10000, 
 	    	'animduration' : 550, 
 	    	'automatic' : false,
-	        'height' : 440,
+	        'height' : 600,
 	        'width' : 940,
 	        'showcontrols' : false,
 	        'responsive' : true
 	    });
 	    $('.bjqs-markers').prependTo($('#menu'));
 	});
+
+	window.onload = function(){ document.getElementById('loader').style.display = "none"; } 
 </script>
 </head>
 <body>
@@ -44,13 +46,12 @@
 					</div>
 				</li>
 				<li class="content-child"  id="about">
-					<div class="one-third column alpha">
-						<h3>IMAGE HERE</h3>
-					</div>
-					<div class="two-thirds column omega" id="me">
-						<p>Novanto Ji, 20 years old.</p>
-						<p>A web developer, newbie system administrator, network security enthusiast and soon-to-be-Bachelor in Computer Science, specifically majoring in Information Systems at University of Indonesia.<br>You can follow me on social networks and get to know more about me by clicking at contact on menu tab above.</p>
-						<p>I build hand-coded, responsive websites, with a focus on web standards. And I am still honing my skills on Mobile Application Development in order to adapt with the current needs of many workplaces.</p>
+					<h2>HELLO!</h2>
+						<div class="circle"><img src="images/portofoto.png"></div>
+					<div id="me">
+						<p class="mid">My Name is Novanto Ji,</p>
+						<p class="mid">A web developer, newbie system administrator, network security enthusiast and soon-to-be-Bachelor in Computer Science, specifically majoring in Information Systems at University of Indonesia.<br><br>You can follow me on social networks and get to know more about me by clicking at contact on menu tab above.</p>
+						<p class="mid"><br>I build hand-coded, responsive websites, with a focus on web standards. And I am still honing my skills on Mobile Application Development in order to adapt with the current needs of many workplaces.</p>
 					</div>
 				</li>
 				<li class="content-child" id="works">
@@ -61,15 +62,28 @@
 						<h3>SYSTEM ADMINISTRATION</h3>
 					</div>
 					<div class="one-third column omega">
-						<h3>AVAILABLE TO HIRE (W/WO FEES)</h3>
+						<h3>SOFTWARE DEVELOPMENT</h3>
 					</div>
 				</li>
-				<li class="content-child">
-					<div class="one-third column alpha">
-						<h2>Contact</h2>
-					</div> 
+				<li class="content-child" id="contact">
+					<div class="mid">
+						<h2 class='cheader'>SAY HELLO!</h2><br>
+						<p>Interested in hiring me?</p><br>
+						<p>You can contact me on below:</p><br><br>
+						<p>
+							<a href="https://facebook.com/novanto.ji"><img src="images/facebook.jpg" class="social"></a>
+							<a href="https://twitter.com/novantonono"><img src="images/twitter.jpg" class="social"></a>
+							<a href="http://www.linkedin.com/profile/view?id=201499396&goback=%2Enmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic"><img src="images/linkedin.jpg" class="social"></a>
+							<a href="mailto:novanto.ji@gmail.com"><img src="images/mail.jpg" class="social"></a>
+						</p>
+					</div>			
 				</li>
 			</ul>
 		</div>
 	</div>
+	<div id="loader">
+		Please wait for your connection to displaying this site
+		<img src="images/loading.gif">
+	</div>
+
 </body>
