@@ -23,7 +23,7 @@
 /* #Header Styles
 ================================================== */
 header {
-	background-color:#d8d8d8;
+	background-color:rgba(146, 170, 231, 0.36);
 	height:100px;
 }
 
@@ -36,7 +36,7 @@ header {
 #menu {
 	float:right;
 	padding-top:6%;
-	font-family: "Droid-Sans";
+	font-family: "Omnes";
 	font-size: 28px;
 }
 
@@ -48,8 +48,10 @@ header {
 /* #Page Styles
 ================================================== */
 body {
-	background-color: #efefef;
+	background-image: url('../images/geometry.png');
 }
+
+#loader { position:absolute; top:0px; left:0px; height:100%; width:100%; background:#000; color:#fff; text-align:center; } 
 
 a {
 	color:#f86b76;
@@ -77,12 +79,38 @@ a:hover{
 	border-bottom:solid 2px;
 }
 
-#about h3, #works h3 {
+#about h2, .cheader {
+	max-width:170px;
+	border-bottom:1px solid #a9a9a9;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+
+.cheader {
+	max-width:200px;
+}
+.circle{
+	width: 222px;
+	height: 222px;
+	border-radius: 230px;
+	margin: 0 auto;
+	top: 0;
+	margin-bottom: 1.25em;
+	padding: 4px;
+	border: 2px solid #f86b76;
+	background-color: #FFF;
+}
+
+#works h3 {
 	border-top:1px solid #a9a9a9;
 	border-bottom:1px solid #a9a9a9;
 	padding-top:1px;
 	padding-bottom:2px;
 	font-size: 25px;
+}
+
+#about img{
+	max-width:220px;
 }
 
 #about, #works {
@@ -93,8 +121,20 @@ a:hover{
 	font-size: 20px;
 }
 
-#me {
+.mid{
+	margin:0 auto;
+	width:660px;
 	text-align: left;
+}
+
+#contact .mid p {
+	max-width:480px;
+	font-size: 30px;
+	margin:0 auto;
+}
+
+.social {
+	padding-left:10px;
 }
 
 /* #Media Queries
@@ -114,6 +154,9 @@ a:hover{
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#name {
+			font-size:40px;
+		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -158,18 +201,18 @@ a:hover{
 	    src: url('../fonts/ITC_Avant_Garde_Gothic_LT_Extra_Light.ttf');
 	    font-weight: normal;
 	    font-style: normal; 
-	}
+}
 
 @font-face {
 	    font-family: 'Omnes';
-	    src: url('../fonts/Omnes-Thin.otf');
+	    src: url('../fonts/Omnes-Light.otf');
 	    font-weight: normal;
 	    font-style: normal; 
-	}
+}
 
 @font-face {
-	    font-family: 'Droid-Sans';
-	    src: url('../fonts/DroidSans.ttf');
+	    font-family: 'Railway';
+	    src: url('../fonts/Railway-Normal.woff');
 	    font-weight: normal;
 	    font-style: normal; 
-	}
+}
